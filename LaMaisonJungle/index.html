@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>La Maison Jungle</title>
 </head>
 <body>
-    <div id="react-goes-here">
-        <!-- Le contenu de cet élément HTML sera remplacé par mes composants React -->
-    </div>
-        <script 
+    <div id="root"></div>
+    <script 
         crossorigin src="https://unpkg.com/react@18/umd/react.development.js">
         </script>
         <script 
@@ -17,16 +15,12 @@
         </script>
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
         <script type="text/babel">
-            function MyComponent(){
-                return <div>My component is here!</div>
+            function Header(){
+                return (<h1>La Maison Jungle</h1>)
             }
             ReactDOM.render(
-               <MyComponent/>, document.getElementById('react-goes-here')
+               <Header/>, document.getElementById('root')
                );
         </script>
-        <!-- <script>
-            console.log(React);
-        </script>   -->
-    </div>
 </body>
 </html>
