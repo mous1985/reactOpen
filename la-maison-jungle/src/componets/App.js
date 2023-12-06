@@ -1,23 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import Banner from "./Banner";  // import the Banner component
+import Cart from "./Cart";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1> HELLO, MUS!</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div><Banner /><Cart /></div>
+    );
 }
 
 export default App;
